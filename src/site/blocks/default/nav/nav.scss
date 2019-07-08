@@ -1,3 +1,4 @@
+
 .navbar-block{
   display: block;
   width: 100%;
@@ -12,37 +13,73 @@
       margin-block-start:1em;
       margin-block-end:1em;
       margin-right: 1em;
+      @media screen and(max-width: 800px){
+        display: block;
+      }
     }
     .menu-block{
       display: flex;
       flex-grow: .8;
       justify-content: flex-end;
-      .menu-block__inner{
+      .menu-block__inner {
         display: flex;
         flex-direction: row;
-        .menu-item{
+        .menu-item-block{
+          transition: all 0.5s ease;
+          @media screen and(max-width: 800px) {
+            z-index: 10000;
+            background-color: #ffffff;
+            position: fixed;
+            top: 0;
+            left: -750px;
+            width: 50vw;
+            min-width: 100px;
+            height: 100%;
+            &.is--open{
+              left:0;
+            }
+            &.is--dn{
+              display: none;
+            }
+            .menu-item {
+              margin-top: 100px;
+              justify-content: center;
+              align-items: center;
+              display: flex;
+              flex-direction: column!important;
+              .menu-item__list {
+                margin-left: 0 !important;
+                .menu-item__link {
+                  font-size: 18px !important;
+                  margin-bottom: 2.5em;
+                }
+              }
+            }
+          }
+        .menu-item {
           display: flex;
           flex-direction: row;
           margin-left: 0;
           padding-left: 0;
           justify-content: center;
-          .menu-item__list{
-            &:first-child{
+
+          .menu-item__list {
+            &:first-child {
               margin-left: 0;
             }
             margin-left: 2em;
             list-style-type: none;
-            &:hover{
-              .menu-item__link{
+            &:hover {
+              .menu-item__link {
                 background: linear-gradient(330deg, #322760, #BBD3B9);
                 background-size: 500px;
                 background-position: 200px;
-                background-clip:text;
+                background-clip: text;
                 -webkit-text-fill-color: transparent;
               }
             }
 
-            .menu-item__link{
+            .menu-item__link {
               position: relative;
               font-family: 'Montserrat', sans-serif;
               font-style: normal;
@@ -50,19 +87,23 @@
               font-size: 20px;
               line-height: 24px;
               text-decoration: none;
-              transition:all .8s ease;
+              transition: all .8s ease;
               display: block;
               background: linear-gradient(330deg, #322760, #BBD3B9);
               background-size: 500px;
-              background-position:0px;
-              background-clip:text;
+              background-position: 0px;
+              background-clip: text;
               -webkit-text-fill-color: transparent;
             }
           }
         }
       }
+      }
     }
     .phone-block{
+      @media screen and(max-width: 800px){
+        display: none;
+      }
       flex-grow: 0.6;
       display: flex;
       justify-content: flex-start;
