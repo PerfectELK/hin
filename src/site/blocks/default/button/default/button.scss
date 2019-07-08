@@ -1,0 +1,25 @@
+.button-container{
+  .button-container__inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .button-item{
+      min-height: 45px;
+      min-width: 200px;
+      background: #322760;
+      outline: none;
+      border-radius: 10px;
+      color:#fff;
+      border: none;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 25px;
+      &:active{
+        background-color: #BBD3B9;
+        color:#322760;
+      }
+    }
+  }
+}
