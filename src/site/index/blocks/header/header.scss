@@ -1,6 +1,7 @@
 .header-block{
   width: 100%;
-  height: 110vh;
+  height: 900px;
+  margin: 0 auto;
   @media screen and(max-width: 800px){
     height: 500px!important;
   }

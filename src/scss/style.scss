@@ -32,7 +32,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  //overflow-x: hidden;
 }
 
 .mt1{
@@ -97,4 +97,13 @@ button{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+.is--scroll{
+
+}
+body{
+  &.is--scroll{
+    margin-top: 57px;
+  }
 }
