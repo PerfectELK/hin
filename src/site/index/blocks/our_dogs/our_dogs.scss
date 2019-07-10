@@ -26,18 +26,87 @@
       justify-content: flex-start;
       .dog-item {
         width: 100%;
-        justify-content: space-around;
+        justify-content: center;
         .dog-item__inner {
           display: flex;
           flex-direction: row;
-          justify-content: space-around;
+          justify-content: center;
+          @media screen and (max-width: 1000px){
+            padding-left: 10px;
+            padding-right: 10px;
+            .dog-item__info {
+              padding-left: 0!important;
+              .dog-info {
+                .dog-info__item{
+                  font-size: 16px!important;
+                }
+              }
+            }
+            .dog-item__photo{
+              max-width: 400px;
+              order:1;
+              max-height: none;
+              .dog-photo{
+                height: auto;
+                .dog-photo__item{
+                  height: auto;
+                  width: 100%;
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 750px){
+            margin-top: 2em;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            .dog-item__info {
+              padding-left: 0!important;
+              order: 2;
+              max-width: 500px;
+              min-width: auto!important;
+              width: 100%!important;
+
+              .dog-info {
+                padding: 0;
+              }
+            }
+            .dog-item__photo{
+              max-width: 500px!important;
+              order:1;
+              max-height: none;
+              .dog-photo{
+                height: auto;
+                .dog-photo__item{
+                  height: auto;
+                  width: 100%;
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 850px){
+            .dog-item__info {
+              .dog-info {
+                .dog-info__item {
+                  margin-top: 10px!important;
+                }
+              }
+            }
+            .dog-item__photo{
+              max-width: 300px;
+            }
+          }
         .dog-item__info {
           max-height: 300px;
+          min-width: 400px;
+          flex-grow: .3;
           .dog-info {
             height: 100%;
             display: flex;
             flex-direction: column;
             list-style-type: none;
+            max-width: 400px;
 
             .dog-info__item {
               margin-top: 1em;
@@ -54,12 +123,12 @@
         }
       }
         .dog-item__photo{
-          position: relative;
           max-height: 300px;
           .dog-photo{
             height: 100%;
             .dog-photo__item{
               height: 100%;
+              max-width: 100%;
               object-fit: cover;
             }
           }
