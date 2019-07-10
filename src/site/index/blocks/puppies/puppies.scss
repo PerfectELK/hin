@@ -1,0 +1,70 @@
+.puppies-block{
+  margin-top: 2em;
+  .puppies-block__inner{
+
+
+    .puppy-header{
+      .puppy-header__inner{
+        .puppy-header__text{
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 36px;
+          text-align: center;
+          color:#322760;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          margin: 0 0 50px 0;
+        }
+      }
+    }
+
+    .puppy-items{
+      display: flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      justify-content: center;
+      .puppy-item{
+        flex-basis: 28%;
+        @media screen and (max-width: 770px){
+          flex-basis: auto;
+          width: 500px;
+        }
+        padding-left: 1em;
+        padding-right: 1em;
+        .puppy-item__inner{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .puppy-photo{
+            width: 350px;
+            @media screen and (max-width: 770px){
+              max-width: 500px;
+              width: 100%;
+            }
+            .puppy-photo__inner{
+              img{
+                width: 100%;
+              }
+            }
+          }
+          .puppy-name{
+            .puppy-name__inner{
+              text-align: center;
+              .puppy-name__text{
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 17px;
+                text-align: center;
+                color:#322760;
+                letter-spacing: 0.06em;
+                margin: 0 0 50px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
