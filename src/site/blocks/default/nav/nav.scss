@@ -1,5 +1,6 @@
 
 .navbar-block{
+  z-index: 10000;
   &.fixed{
     top:0!important;
     position: fixed;

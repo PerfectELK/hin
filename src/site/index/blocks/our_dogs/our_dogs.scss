@@ -100,7 +100,7 @@
         .dog-item__info {
           max-height: 300px;
           min-width: 400px;
-          flex-grow: .5;
+          flex-grow: .4;
           .dog-info {
             height: 100%;
             display: flex;
@@ -126,6 +126,7 @@
           max-height: 300px;
           .dog-photo{
             height: 100%;
+            text-align: right;
             .dog-photo__item{
               height: 100%;
               max-width: 100%;
