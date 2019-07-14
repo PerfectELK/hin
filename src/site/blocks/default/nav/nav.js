@@ -55,3 +55,11 @@ function unfixed__menu(){
         document.body.classList.remove('is--scroll');
     },300);
 }
+
+var $page = $('html, body');
+$('a.menu-item__link').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 100
+    }, 400);
+    return false;
+});

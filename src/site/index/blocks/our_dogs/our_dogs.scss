@@ -27,6 +27,10 @@
       .dog-item {
         width: 100%;
         justify-content: center;
+        margin-top: 3em;
+        &:first-child{
+          margin-top: 0!important;
+        }
         .dog-item__inner {
           display: flex;
           flex-direction: row;

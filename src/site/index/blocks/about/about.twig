@@ -1,16 +1,26 @@
 <section class="about-block">
-    <div class="about-block__inner">
+    <div class="about-block__inner" id="about">
         <div class="about-header">
-            <h4 class="about-header__text">
+            <h4 class="about-header__text" >
                 О Японском Хине
             </h4>
-            {% include '../../../blocks/default/button/default/button.twig' with {name: 'Подробнее'} %}
+            <div class="about-description">
+                <div class="about-description__item">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eos error hic laborum minus placeat quae quasi! Alias aliquid aperiam aspernatur delectus dignissimos eaque enim explicabo facere, hic id inventore iste itaque laborum maxime molestiae, nemo nesciunt nihil non obcaecati odio omnis quia, quis quod rem sequi soluta velit voluptas
+                </div>
+            </div>
+            <div class="about-description about-description__item2 hidden">
+                <div class="about-description__item">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eos error hic laborum minus placeat quae quasi! Alias aliquid aperiam aspernatur delectus dignissimos eaque enim explicabo facere, hic id inventore iste itaque laborum maxime molestiae, nemo nesciunt nihil non obcaecati odio omnis quia, quis quod rem sequi soluta velit voluptas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam quod recusandae. Adipisci distinctio dolor id, iusto odit perferendis perspiciatis quas ratione saepe vel. Ducimus in reiciendis sequi tenetur voluptates. Aut autem beatae commodi cumque cupiditate dolor, eos, eum excepturi facilis fugiat harum illo laboriosam mollitia nisi nobis nulla omnis optio porro qui quidem reiciendis rerum saepe soluta unde ut voluptas voluptates! Animi blanditiis dicta doloribus ea eius eveniet facere fuga hic incidunt ipsa libero magnam minima, obcaecati perferendis qui quo ratione repudiandae tempora temporibus, totam. Corporis deserunt modi nihil obcaecati! Eos illum labore laudantium mollitia unde! Commodi, optio, voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aperiam at aut culpa eligendi excepturi labore magnam nemo nesciunt non, porro quam quasi qui quidem repellendus rerum sed similique, tenetur voluptas. Cupiditate debitis mollitia natus non ut. Autem cum dignissimos dolore dolorem in natus reiciendis similique veritatis voluptas voluptate? Ab amet, architecto aspernatur consequuntur cum cupiditate dolorum earum esse fuga hic illum incidunt inventore ipsam ipsum iste libero magnam magni minima molestiae nam nemo nesciunt nobis obcaecati odit quaerat quam quia quibusdam quis repellat reprehenderit repudiandae rerum sapiente sequi tempora veniam vero vitae? Dolor harum iste natus odit, quos sunt vel. Accusantium alias, amet atque consectetur cum dolor ea earum facere fugiat harum in ipsa ipsum, itaque molestiae nam neque pariatur placeat quasi quis reiciendis, rerum sapiente sed. Accusantium aliquid autem blanditiis cum cumque cupiditate deserunt dolorem eius esse eum fugiat fugit ipsum laborum libero placeat porro qui quia quibusdam quis repellat repellendus, reprehenderit tempora! Ab amet autem ea explicabo iusto minima, molestias nemo placeat provident ratione! Ab accusamus beatae corporis culpa deleniti dolore earum eligendi esse expedita harum illum incidunt laboriosam maiores maxime, minima molestias mollitia, nemo numquam odio omnis perspiciatis reiciendis rem saepe sequi similique tempore vitae!
+                </div>
+            </div>
+            {% include '../../../blocks/default/button/default/button.twig' with {name: 'Подробнее', addCls: 'open-btn', dataOpen: 'about-description__item2'} %}
         </div>
-        <div class="about-content__wrapper">
+        <div class="about-content__wrapper" id="sakura">
         <div class="about-content">
 
-            <div class="text-block">
-                <h5 class="text-block__header">Сакура</h5>
+            <div class="text-block" >
+                <h5 class="text-block__header" >Сакура</h5>
                 <span class="text-block__item">
                     <p>
                         <img src="img/temp/hin_about.png" alt="" align="right">
