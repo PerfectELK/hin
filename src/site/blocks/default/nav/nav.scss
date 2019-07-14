@@ -86,6 +86,13 @@
             }
             margin-left: 2em;
             list-style-type: none;
+            @media screen and (max-width: 1000px) {
+              margin-left: 1em;
+              .menu-item__link{
+                font-size: 17px!important;
+              }
+
+            }
             &:hover {
               .menu-item__link {
                 background: linear-gradient(330deg, #322760, #BBD3B9);
