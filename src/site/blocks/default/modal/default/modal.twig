@@ -1,0 +1,11 @@
+<div class='modal {{ modalCls }}' data-modal="{{ dataModal }}">
+    <div class='content'>
+        <h1 class='title'>{{ header }}</h1>
+
+        {% set c = content %}
+        {% include c %}
+
+        {% set dataM = dataModal %}
+        {% include "../../button/default/button.twig" with {name: "Закрыть", dataM: dataM  , addCls: "close-modal w150p" , contCls: "flx-end mt1"}%}
+    </div>
+</div>

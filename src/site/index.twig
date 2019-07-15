@@ -12,4 +12,6 @@
 
     {% include 'index/blocks/map/map.twig' %}
 
+    {% include 'blocks/default/modal/default/modal.twig' with {modalCls: "our_dogs_modal",dataModal: ".our_dogs_modal", header: "Гирон", content: "../../modal_content/our_dogs/our_dogs.twig" } %}
+
 {% endblock %}

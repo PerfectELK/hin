@@ -25,6 +25,7 @@
       align-items: center;
       justify-content: flex-start;
       .dog-item {
+        max-width: 1380px;
         width: 100%;
         justify-content: center;
         margin-top: 3em;
@@ -32,95 +33,102 @@
           margin-top: 0!important;
         }
         .dog-item__inner {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          margin-top: 2em;
-          @media screen and (max-width: 1000px){
+
+          .dog-item__link {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 2em;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+          @media screen and (max-width: 1000px) {
             padding-left: 10px;
             padding-right: 10px;
             .dog-item__info {
-              padding-left: 0!important;
+              padding-left: 0 !important;
               .dog-info {
-                .dog-info__item{
-                  font-size: 16px!important;
+                .dog-info__item {
+                  font-size: 16px !important;
                 }
               }
             }
-            .dog-item__photo{
+            .dog-item__photo {
               max-width: 400px;
-              order:1;
+              order: 1;
               max-height: none;
-              .dog-photo{
+              .dog-photo {
                 height: auto;
-                .dog-photo__item{
+                .dog-photo__item {
                   height: auto;
                   width: 100%;
                 }
               }
             }
           }
-          @media screen and (max-width: 750px){
+          @media screen and (max-width: 750px) {
             flex-direction: column;
             align-items: center;
             padding-left: 10px;
             padding-right: 10px;
             .dog-item__info {
-              padding-left: 0!important;
+              padding-left: 0 !important;
               order: 2;
               max-width: 500px;
-              min-width: auto!important;
-              width: 100%!important;
+              min-width: auto !important;
+              width: 100% !important;
 
               .dog-info {
                 padding: 0;
               }
             }
-            .dog-item__photo{
-              max-width: 500px!important;
-              order:1;
+            .dog-item__photo {
+              max-width: 500px !important;
+              order: 1;
               max-height: none;
-              .dog-photo{
+              .dog-photo {
                 height: auto;
-                .dog-photo__item{
+                .dog-photo__item {
                   height: auto;
                   width: 100%;
                 }
               }
             }
           }
-          @media screen and (max-width: 850px){
+          @media screen and (max-width: 850px) {
             .dog-item__info {
               .dog-info {
                 .dog-info__item {
-                  margin-top: 10px!important;
+                  margin-top: 10px !important;
                 }
               }
             }
-            .dog-item__photo{
+            .dog-item__photo {
               max-width: 300px;
             }
           }
-        .dog-item__info {
-          max-height: 300px;
-          min-width: 400px;
-          flex-grow: .4;
-          .dog-info {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            list-style-type: none;
-            max-width: 400px;
+          .dog-item__info {
+            max-height: 300px;
+            min-width: 400px;
+            //flex-grow: .4;
+            .dog-info {
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              list-style-type: none;
+              max-width: 400px;
+              padding: 0;
 
-            .dog-info__item {
-              margin-top: 1em;
-              font-family: 'Montserrat', sans-serif;
-              color: #16055A;
-              font-style: normal;
-              font-weight: bold;
-              font-size: 18px;
-              &:first-child {
-                margin-top: 0;
+              .dog-info__item {
+                margin-top: 1em;
+                font-family: 'Montserrat', sans-serif;
+                color: #16055A;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                &:first-child {
+                  margin-top: 0;
+                }
               }
             }
           }
