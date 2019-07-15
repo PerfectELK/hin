@@ -12,7 +12,7 @@
           font-weight: bold;
           font-size: 36px;
           text-align: center;
-          color:#322760;
+          color:#000;
           text-transform: uppercase;
           letter-spacing: 0.06em;
           margin: 0 0 50px 0;
@@ -25,7 +25,7 @@
       align-items: center;
       justify-content: flex-start;
       .dog-item {
-        max-width: 1380px;
+        max-width: 920px;
         width: 100%;
         justify-content: center;
         margin-top: 3em;
@@ -42,6 +42,11 @@
             padding-left: 10px;
             padding-right: 10px;
             text-decoration: none;
+            //transition: all 0.4s linear;
+
+            &:hover{
+              transform: rotate3d(30,30,30);
+            }
           @media screen and (max-width: 1000px) {
             padding-left: 10px;
             padding-right: 10px;
@@ -122,7 +127,7 @@
               .dog-info__item {
                 margin-top: 1em;
                 font-family: 'Montserrat', sans-serif;
-                color: #16055A;
+                color: #000;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 18px;

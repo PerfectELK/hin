@@ -24,10 +24,12 @@ body {
 }
 
 .modal {
+  margin-top: 2em;
   .content{
     max-width: 700px;
   }
   @media screen and (max-width: 900px) {
+    margin-top: 0;
     padding: 40px 10px 40px 10px!important;
     .content{
       max-width: 70vw;

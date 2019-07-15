@@ -49,7 +49,7 @@
             font-style: normal;
             font-weight: bold;
             font-size: 20px;
-            color:#322760;
+            color:#000;
             text-transform: uppercase;
             letter-spacing: 0.06em;
             margin:0 0 10px 0;
@@ -65,7 +65,7 @@
               font-family: 'Montserrat', sans-serif;
               font-style: normal;
               font-size: 18px;
-              color:#322760;
+              color:#000;
               padding-top: 10px;
               .icon-group{
                 display: flex;
@@ -82,7 +82,7 @@
               .link{
                 margin-top: 1em;
                 font-family: 'Montserrat', sans-serif;
-                color:#322760;
+                color:#000;
                 font-style: normal;
                 text-decoration: none;
                 font-size: 18px;
@@ -103,7 +103,7 @@
               font-size: 15px;
               font-weight: bold;
               text-align: center;
-              color:#322760;
+              color:#000;
               letter-spacing: 0.06em;
             }
           }
@@ -114,5 +114,5 @@
 }
 
 .fill-blue{
-  fill:#322760!important;
+  fill:#000!important;
 }
