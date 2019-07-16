@@ -1,0 +1,64 @@
+.contact-block{
+  margin-bottom: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+  .contact-block__inner{
+    .contact-form{
+      .contact-form__header{
+        .contact-form__header-text{
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          text-align: center;
+          color: #000;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          margin: 0 0 1em 0;
+        }
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (max-width: 800px) {
+          .form-group{
+            width: 100%!important;
+            flex-direction: column!important;
+            div{
+              margin-left: 0!important;
+              margin-bottom: 1em;
+              &:last-child{
+                margin-bottom: 0;
+              }
+            }
+          }
+          .form-item{
+            width: 100%!important;
+          }
+        }
+        .form-group{
+          width: 700px;
+          margin-bottom: 1em;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          div{
+            flex-basis: 50%;
+            margin-left: 1em;
+            &:first-child{
+              margin-left: 0;
+            }
+          }
+        }
+        .form-item{
+          display: flex;
+          width: 700px;
+          div{
+            flex-basis: 100%;
+          }
+        }
+      }
+    }
+  }
+}

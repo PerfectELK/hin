@@ -12,6 +12,14 @@
 
     {% include 'index/blocks/map/map.twig' %}
 
+    {% include 'index/blocks/contacts/contacts.twig' %}
+
     {% include 'blocks/default/modal/default/modal.twig' with {modalCls: "our_dogs_modal",dataModal: ".our_dogs_modal", header: "Гирон", content: "../../modal_content/our_dogs/our_dogs.twig" } %}
+
+    {% include 'blocks/default/modal/default/modal.twig' with {modalCls: "puppy-modal",dataModal: ".puppy-modal", header: "Намбэ", content: "../../modal_content/puppy/puppy.twig" } %}
+
+    {% include 'blocks/default/modal/default/modal.twig' with {modalCls: "success-modal",dataModal: ".success-modal", header: "Ваше сообщение успешно отправлено!", content: "../../modal_content/success/success.twig" } %}
+
+    {#<button class="open-modal" data-modal=".success-modal">Модалка</button>#}
 
 {% endblock %}

@@ -1,0 +1,40 @@
+<div class="slick-container">
+    <div class="pelk-slick">
+        <a class="slick__item" href="img/temp/dog.png">
+            <img class="" src="img/temp/dog.png" alt="">
+        </a>
+        <a class="slick__item" href="img/temp/dog.png">
+            <img class="" src="img/temp/dog.png" alt="">
+        </a>
+        <a class="slick__item" href="img/temp/dog.png">
+            <img class="" src="img/temp/dog.png" alt="">
+        </a>
+        <a class="slick__item" href="img/temp/dog.png">
+            <img class="" src="img/temp/dog.png" alt="">
+        </a>
+        <a class="slick__item" href="img/temp/dog.png">
+            <img class="" src="img/temp/dog.png" alt="">
+        </a>
+    </div>
+</div>
+<span class="content__text">
+  <ul>
+      <li>Возраст: 25 лет</li>
+      <li>Вес: 200 кг</li>
+      <li>Окрас: Бело-черный</li>
+      <li>Цена: 15 000 руб</li>
+  </ul>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi cum facilis inventore, quibusdam quos ut voluptas. A ad aspernatur assumenda culpa cumque dignissimos dolores eos iusto labore magni nam, nesciunt nisi numquam possimus provident quae quasi repellat veritatis voluptas voluptate? Aperiam atque eaque eius ex, harum ipsam veniam? Deserunt doloribus mollitia quidem! Accusantium assumenda illum molestiae obcaecati officia placeat ratione unde? Ad aperiam assumenda eius laboriosam quam quas repellendus vel.
+</span>
+<div class="form__block">
+    <h4 class="form__header">Отправить заявку на резервацию</h4>
+    <form class="form__validation" method="post" action="form.puppy_request">
+        {% include '../../input/text/default.twig' with {type: 'text', name: 'f[name]', placeholder: 'ФИО',
+            validateCls: 'input-text__item validate[required]', addClassContainer: 'max_w300' } %}
+        {% include '../../input/text/default.twig' with {type: 'email', name: 'f[email]', placeholder: 'E-mail',
+            validateCls: 'input-text__item validate[required, custom[email]]', addClassContainer: 'max_w300' } %}
+        {% include '../../input/text/default.twig' with {type: 'text', name: 'f[tel]', placeholder: 'Телефон',
+            validateCls: 'input-text__item validate[required, custom[phone]]', addClassContainer: 'max_w300',  } %}
+        {% include "../../button/default/button.twig" with {name: "Отправить", dataM: dataM  , addCls: "w150p" , contCls: "flx-start mt1"}%}
+    </form>
+</div>

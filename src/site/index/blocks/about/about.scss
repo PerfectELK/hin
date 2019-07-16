@@ -13,6 +13,20 @@
           color: #000;
           font-style: normal;
           font-size: 18px;
+          position: relative;
+          max-height: inherit;
+          p{
+            max-height: inherit;
+            display: block;
+          }
+          img{
+            max-height: inherit;
+            max-width: 400px;
+            display: inline;
+            @media screen and (max-width: 650px) {
+              max-width: 100%;
+            }
+          }
         }
         &.about-description__item2{
           transform: scaleY(1);
@@ -22,6 +36,7 @@
           &.hidden{
             transform: scaleY(0);
             max-height: 0;
+            visibility: hidden;
           }
         }
       }

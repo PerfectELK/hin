@@ -1,0 +1,41 @@
+.input-container{
+  .input-text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    &.input-left{
+      align-self: left;
+    }
+    input{
+      width: 100%;
+      padding: 0;
+      box-sizing: border-box;
+      border: 0;
+      border-radius: 10px;
+      height: 52px;
+      background-color: #C4C4C4;
+      font-size: 20px;
+      font-weight: normal;
+      font-family: Roboto;
+      padding-left: 1.5em;
+      outline: none;
+      &:hover{
+        outline: none;
+      }
+      &::placeholder{
+        font-size: 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        text-indent: 0px;
+        transition: text-indent 300ms;
+      }
+      &:focus{
+        &::placeholder{
+          text-indent: 500px;
+        }
+      }
+    }
+  }
+}

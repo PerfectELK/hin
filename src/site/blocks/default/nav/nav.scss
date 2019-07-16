@@ -1,6 +1,6 @@
 
 .navbar-block{
-  z-index: 10000;
+  z-index: 400;
   &.fixed{
     top:0!important;
     position: fixed;
@@ -188,7 +188,7 @@
 }
 
 .line-menu {
-  background-color: #322760;
+  background-color: #000;
   border-radius: 5px;
   width: 50%;
   height: 4px;

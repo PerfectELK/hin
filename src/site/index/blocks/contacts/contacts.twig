@@ -1,0 +1,24 @@
+<section class="contact-block">
+    <div class="contact-block__inner">
+        <div class="contact-form">
+            <div class="contact-form__header">
+                <h5 class="contact-form__header-text">
+                    Связаться с нами
+                </h5>
+            </div>
+            <form class="form__validation" action="form.contact">
+                <div class="form-group">
+                    {% include '../../../blocks/default/input/text/default.twig' with {type: 'text', name: 'f[name]', placeholder: 'ФИО',
+                        validateCls: 'input-text__item validate[required]'} %}
+                    {% include '../../../blocks/default/input/text/default.twig' with {type: 'text', name: 'f[tel]', placeholder: 'Телефон',
+                        validateCls: 'input-text__item' } %}
+                </div>
+                <div class="form-item">
+                    {% include '../../../blocks/default/input/text/default.twig' with {type: 'email', name: 'f[email]', placeholder: 'E-mail',
+                        validateCls: 'input-text__item validate[required, custom[email]]'} %}
+                </div>
+                {% include "../../../blocks/default/button/default/button.twig" with {name: "Отправить", dataM: dataM  , addCls: "w150p" , contCls: "flx-start mt1"}%}
+            </form>
+        </div>
+    </div>
+</section>

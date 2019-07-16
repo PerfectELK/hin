@@ -61,6 +61,13 @@ html, body {
 .flx-end{
   justify-content: flex-end!important;
 }
+.flx-start{
+  justify-content: flex-start!important;
+}
+
+.dflx{
+  display: flex;
+}
 
 .jcr{
   justify-content: flex-end;
@@ -71,6 +78,18 @@ html, body {
 }
 .w100{
   width: 100%;
+}
+.max_w200{
+  max-width: 200px;
+}
+.max_w300{
+  max-width: 300px;
+}
+.max_w350{
+  max-width: 350px;
+}
+.max_w700{
+  max-width: 700px;
 }
 
 

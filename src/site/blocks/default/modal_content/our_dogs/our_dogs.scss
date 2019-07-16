@@ -14,4 +14,26 @@
   text-align: left;
   display: block;
   padding-left: 10px;
+  ul{
+    padding-left: 20px;
+  }
 }
+.form__block{
+  .form__header{
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-style: normal;
+    font-size: 24px;
+    text-align: left;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    input{
+      margin-top: 15px;
+    }
+  }
+
+}
+
